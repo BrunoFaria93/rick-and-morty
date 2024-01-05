@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+/* colors */
+
+.titleColor {
+  color: #bef264;
+}
+.infoColor {
+  color: #86efac;
+}
+
+/* most used */
+
+.flexHorizontal {
+  display: flex;
+}
+.flexVertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.displayInline {
+  display: inline;
+}
+
+/* main area */
+.container {
+  background-image: linear-gradient(#0f172a, #020617);
+  height: 100vh;
+  width: 100vw;
+  gap: 25px;
+}
+.logo {
+  height: 75px;
+}
+
+/* container */
+.cardsContainer {
+  width: 90%;
+  height: 50vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* items / card */
+
+.listItem {
+  list-style: none;
+  background: #164e63;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+.charImage {
+  border-radius: 10px;
+  width: 30%;
+}
+.charInfo {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 10px;
+  overflow-x: hidden;
+  gap: 2px;
+}
+.charInfo h3 {
+  margin-bottom: 7px;
+}
+.charInfo label {
+  font-size: 16px;
+  color: #06b6d4;
+  margin-right: 3px;
+  height: auto;
+}
+.charInfo span {
+  font-size: 16px;
+}
+/* deskop */
+
+@media (min-width: 768px) {
+  .logo {
+    height: 135px;
+  }
+
+  .cardsContainer {
+    width: 50%;
+    height: 55vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .titleColor {
+    color: #bef264;
+  }
+  .charImage {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 150px;
+    width: 130px;
+  }
+  .charInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    gap: 1px;
+  }
+  .charInfo h3 {
+    margin-bottom: 15px;
+    font-size: 25px;
+  }
+  .charInfo label {
+    font-size: 17px;
+  }
+  .charInfo span {
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+}
